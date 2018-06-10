@@ -1,6 +1,6 @@
 // Set the date when your 100 days of coding is done ! 
 var countDownDate = new Date("Sep 17, 2018 12:00:00").getTime();
-
+//change it according to your t-100 days :)
 
 // Update the count down every 1 second
 var x = setInterval(function() {
