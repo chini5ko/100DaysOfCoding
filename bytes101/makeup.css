@@ -63,17 +63,3 @@ h3 {
     animation-iteration-count: 2;
     animation-timing-function: linear;
 }
-
-#circleByteRotate_1{
-    animation-name: spin;
-    animation-duration: 300ms;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
-}
-
-#circleByteRotate_2{
-    animation-name: spin;
-    animation-duration: 300ms;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
-}
