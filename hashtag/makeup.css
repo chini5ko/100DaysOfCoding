@@ -1,19 +1,19 @@
 
 
 body{
-    background-color: rgb(228, 223, 230);
+    background-color: rgb(50, 103, 163);
 }
 
 h1 {
     font-size: 50px;
     text-align: center;
-    color: black;
+    color: rgb(190, 209, 224);
 }
 
 h3 {
     font-size: 40px;
     text-align: center;
-    color: black;
+    color: rgb(190, 209, 224);
 }
 
 .center {
@@ -57,23 +57,9 @@ h3 {
     }
 }
 
-#circleByteRotate{
-    animation-name: spin;
-    animation-duration: 300ms;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
-}
-
-#circleByteRotate_1{
-    animation-name: spin;
-    animation-duration: 300ms;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
-}
-
-#circleByteRotate_2{
-    animation-name: spin;
-    animation-duration: 300ms;
-    animation-iteration-count: 2;
-    animation-timing-function: linear;
+p{
+   
+    color: #fafcf1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
 }
