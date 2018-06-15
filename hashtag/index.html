@@ -1,41 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title># # #</title>
-  
-    <link rel="stylesheet" type="text/css" href="makeup.css">
-   
-    <script src="script.js" defer></script>
+<html lang="">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytes</title>
+
+    <link rel="stylesheet" type="text/css" href="makeup.css">
+    <script src="script.js"></script>
+    <script src="conversions.js"></script>
 </head>
+
 <body>
 
-    <h1 id="project">Hashtaging APP</h1>
 
-   <div class="center">
-        <img id="instagramIcon" src="hashtag.png"  alt="instagram"  width="180" height="150"/>
-        <img id="instagramIcon" src="ing.png"  alt="instagram"width="200" height="150"/>
-        <img id="instagramIcon" src="hashtag.png"  alt="instagram"  width="180" height="150"/>
-        
+    <div text-align="center">
 
-   </div>
+        <h1 id="project">Bytes 101</h1>
 
-       
-  
-</a>
-    <div class="center">
-    <h3 >Add hastag to each word</h3>    
-    
-    <textarea id="myTextarea" rows="4" cols="50">#pasteHereYourText </textarea>
+        <div class="circleByte">
 
-    <p></p>
-    <button onclick="myFunction()" class="btn"  >Add #</button>
-   
-    <p id="show" ></p>
 
-</div>
+            <div class="circleByte animation">
+
+                <img id="circleByte" src="bytes.png" alt="byte" class="center" />
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <img id="old" src="old.jpg" class="center" height="150px" width="200px" />
+
+        </div>
+
+        <p>Click the "To-Binary" button to get your age in Decimal to Binary</p>
+        <p>Click the "To-Decimal" button to get your age from Binary to Decimal</p>
+        <p>Click the "New Age" button to input a new your age </p>
+
+        <form>
+            <div>
+
+                <input id="digitAge" type="text" onfocus="document.getElementById('digitAge').value='';" value="Enter Age Here">
+            </div>
+            <br>
+            <div>
+
+                <input type="button" onclick="myFunction();" class="btn" value="To-Binary">
+
+                <input type="button" onclick="myBinary();" class="btn" value="To-Decimal">
+
+                <input type="reset" class="btn" onClick="window.location.reload()" value="New Age">
+            </div>
+
+            <div>
+
+                <p id="demo"></p>
+                <p id="showBinary"></p>
+
+                <p id="showDecimal"></p>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

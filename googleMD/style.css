@@ -76,3 +76,16 @@ h5{
     margin-left: 40%;
     margin-right: 39%;
 }
+
+.fundContainer{
+    border: #000000 ;
+    margin-top: 50px;
+}
+
+
+
+.fundContainer>.snippedPadding>.mdl-progress>.progressbar {
+    background-color: green;
+    z-index: 1;
+    left: 0;
+}

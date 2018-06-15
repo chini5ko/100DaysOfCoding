@@ -13,12 +13,14 @@ document.querySelector('#p1').addEventListener('mdl-componentupgraded', function
     this.MaterialProgress.setProgress(8);
   });
 
+
+  
   
   //countdown 
-  var countDownDate = new Date("Sep 17, 2018 12:00:00").getTime();
-  var countDownDateMe = new Date("Aug 23, 2018 12:00:00").getTime();
-  var countDownDateMo = new Date("Aug 23, 2018 12:00:00").getTime();
-  var countDownDateEd = new Date("Sep 12, 2018 12:00:00").getTime();
+  var countDownDate = new Date("Sep 17, 2018 01:00:00").getTime();
+  var countDownDateMe = new Date("Aug 23, 2018 01:00:00").getTime();
+  var countDownDateMo = new Date("Aug 23, 2018 01:00:00").getTime();
+  var countDownDateEd = new Date("Sep 12, 2018 01:00:00").getTime();
 
  var x = setInterval(function() {
 
@@ -57,3 +59,7 @@ document.querySelector('#p1').addEventListener('mdl-componentupgraded', function
         document.getElementById("dayLeft").innerHTML = "Done!";
     }
 }, 1000);
+
+document.querySelector('#p5').addEventListener('mdl-componentupgraded', function() {
+  this.MaterialProgress.setProgress(60);
+});
