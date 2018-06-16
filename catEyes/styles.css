@@ -1,0 +1,28 @@
+div{
+    
+}
+
+.header{
+    position: relative;
+    height: 200px;
+    width: auto;
+    background: black;
+}
+
+.eyes {
+
+   
+}
+
+#catEyesLeft{
+
+    margin-left: 25%;
+    padding-left: 10px;
+}
+
+ #catEyesRight{
+    position: absolute;
+    margin-right: 10%;
+
+}
+
