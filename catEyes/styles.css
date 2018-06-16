@@ -2,6 +2,10 @@ div{
     
 }
 
+h1{
+    text-align: center;
+}
+
 .header{
     position: relative;
     height: 200px;
@@ -9,15 +13,15 @@ div{
     background: black;
 }
 
-.eyes {
+img{
+   margin-left: 30%;
 
-   
 }
 
 #catEyesLeft{
 
     margin-left: 25%;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
  #catEyesRight{
