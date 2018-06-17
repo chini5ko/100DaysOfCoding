@@ -1,65 +1,105 @@
-document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-    this.MaterialProgress.setProgress(5);
-  });
-  document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
-    this.MaterialProgress.setProgress(30);
-  });
+ //number of challengers for lopp purposes 
+  var numberOfChallengers = 4;
+  var chalengersName = new Array();
+  chalengersName.push("Hector");
+  chalengersName.push("Mehmet");
+  chalengersName.push("Momo");
+  chalengersName.push("Eddie");
 
-  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
-    this.MaterialProgress.setProgress(30);
-  });
-
-  document.querySelector('#p4').addEventListener('mdl-componentupgraded', function() {
-    this.MaterialProgress.setProgress(8);
-  });
-
-
-  
-  
   //countdown 
-  var countDownDate = new Date("Sep 17, 2018 01:00:00").getTime();
-  var countDownDateMe = new Date("Aug 23, 2018 01:00:00").getTime();
-  var countDownDateMo = new Date("Aug 23, 2018 01:00:00").getTime();
-  var countDownDateEd = new Date("Sep 12, 2018 01:00:00").getTime();
+  //the last date where the challenge is completed 
+  var countdown = new Array();
+  countdown.push(new Date("Sep 17, 2018 01:00:00").getTime());
+  countdown.push(new Date("Aug 23, 2018 01:00:00").getTime());
+  countdown.push(new Date("Aug 23, 2018 01:00:00").getTime());
+  countdown.push(new Date("Sep 12, 2018 01:00:00").getTime());
 
- var x = setInterval(function() {
+  //distance from current time to the last day of the challenge culmination 
+  var distance = new Array();
 
-    // Get todays date and time
-    var now = new Date().getTime();
+  //days left 
+  var days = new Array();
+ 
+
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+    // var distance = countDownDate - now; //original code
+    for(var i=0;i<numberOfChallengers;i++){
+      distance.push(countdown[i]-now);
+    }
     
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
     // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    for(var i=0;i<numberOfChallengers;i++){
+      days.push(100-(Math.floor(distance[i] / (1000 * 60 * 60 * 24))));
+    }
+    
+  
+  var x = setInterval(function() {
 
-    //days for all challengers 
-    var distanceMe = countDownDateMe -  now;
-    var distanceMo = countDownDateMo - now;
-    var distanceEd = countDownDateEd - now; 
+    //print in HTML the name and percentage
+    var HTMLidDayLeftChallenger;
 
-    var daysMe = Math.floor(distanceMe / (1000 * 60 * 60 * 24));
-    var daysMo = Math.floor(distanceMo / (1000 * 60 * 60 * 24));
-    var daysEd = Math.floor(distanceEd / (1000 * 60 * 60 * 24));
+     //create a string for querySelector for each Challenger
+    for(var i=0;i<numberOfChallengers;i++){
+      HTMLidDayLeftChallenger = "dayLeftChallenger_" + i;
+      document.getElementById(HTMLidDayLeftChallenger).innerHTML = chalengersName[i]+ ": " +  days[i]+" %";
 
+      if (distance[i] < 0) {
+        clearInterval(x);
+        document.getElementById(HTMLidDayLeftChallenger).innerHTML = "Done!";
+    }
+
+    //original for other purposes: Get: hours, minutes , seconds
+    /**
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24)); //original
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    var daysLeft = 100 - days;
-    // Output the result in an element with id="demo"
-    document.getElementById("dayLeftChallenger_1").innerHTML = "Hector: " +  daysLeft+"%";
-    document.getElementById("dayLeftChallenger_2").innerHTML = "Mehmet: " +  (100 - daysMe)+"%";
-    document.getElementById("dayLeftChallenger_3").innerHTML = "Momo:   " +  (100- daysMo)+"%";
-    document.getElementById("dayLeftChallenger_4").innerHTML = "Eddie:  " +  (100 - daysEd)+"%";
-    //console.log("day left : " + daysLeft);
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("dayLeft").innerHTML = "Done!";
+    */
+
+
     }
+    // If the count down is over, write some text 
 }, 1000);
 
+
+  var p = new Array();
+  for(var i=0;i<numberOfChallengers;i++){
+    p.push('#p'+i);
+  }
+
+  /**
+  for(var i=0;i<numberOfChallengers;i++){
+    document.querySelector(p[i]).addEventListener('mdl-componentupgraded', function() {
+      this.MaterialProgress.setProgress(20);
+      console.log(days[i]);
+    });
+  }
+*/
+  
+  //sorry I dont know why I cant do a loop here
+  document.querySelector('#p0').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(days[0]);
+  });
+
+  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(days[1]);
+  });
+
+  document.querySelector('#p2').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(days[2]);
+  });
+
+  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(days[3]);
+  });
+
+  var totalFine = 10;
 document.querySelector('#p5').addEventListener('mdl-componentupgraded', function() {
-  this.MaterialProgress.setProgress(60);
+  this.MaterialProgress.setProgress(totalFine);
 });
+
+
+
+document.getElementById("totalAmount").innerHTML = "$" + totalFine;
