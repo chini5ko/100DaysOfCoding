@@ -1,3 +1,5 @@
+//JS
+
 //morning 
 var sitesForMorning = new Array();
 sitesForMorning.push("https://weather.com/weather/today/l/11355:4:US");
