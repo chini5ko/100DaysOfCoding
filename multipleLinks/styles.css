@@ -1,0 +1,23 @@
+body{
+    background: rgb(143, 147, 151);
+}
+
+div{
+    padding:1px;
+}
+
+h1{
+    text-align: center;
+    size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+    padding-top: 80px;
+    color: aqua;
+}
