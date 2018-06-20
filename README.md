@@ -7,3 +7,11 @@ Code at least 1 hour a day; otherwise, I will pay $5 to a fund for fun at the en
 3. [Hashtag generator](https://github.com/chini5ko/100DaysOfCoding/tree/master/hashtag)
 4. [Material Design Experience](https://github.com/chini5ko/100DaysOfCoding/tree/master/materialKit)
 5. [Google API Material Design](https://github.com/chini5ko/100DaysOfCoding/tree/master/googleMD)
+6. IP address checkout (CodeFight)
+7. Avoiding Obstacle (CodeFight)
+8. [Simulating a cat eye with SVG](https://github.com/chini5ko/100DaysOfCoding/tree/master/catEyes)
+9. [Challenger html progress update](https://github.com/…/100DaysOfC…/tree/cleanUpJsCode/googleMD) (Version 2)
+10. [Writing my own math library](https://github.com/…/100DaysOfCo…/tree/math/myOwnMathMethods) : slope
+11. [Multiple Links](https://github.com/…/100DaysOfCodi…/tree/links/multipleLinks) (Version 1.0)
+
+(This readme is weekly updated);
