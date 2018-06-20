@@ -37,7 +37,7 @@ function getPost() {
     facebookPost+= "Why : " + "<br>" ;
     facebookPost+= why + " <br>";
     facebookPost+= "Language: "  ;
-    facebookPost+= language + " <br> " + mehmetLink;
+    facebookPost+= language + " <br> ";
     facebookPost+= "Github Link: ";
     facebookPost+= githubLink;;
     //facebookPost+= code;
