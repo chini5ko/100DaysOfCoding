@@ -15,6 +15,17 @@ h1 {
     color: black;
 }
 
+h2{
+    font-size: 23px;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    display: block;
+    border-style: solid;
+    padding: 3px;
+    border-color: rgb(167, 167, 194);
+}
+
 h3 {
     font-size: 40px;
     text-align: center;
@@ -80,4 +91,10 @@ input{
 
 .buttons{
     padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+br{
+    display: block;
+    margin: 1px 0;
 }
