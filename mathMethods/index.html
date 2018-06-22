@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math</title>
+   <!--Google Links -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+ <!--My  files -->
+    <link rel="stylesheet" type="text/css" href="makeup.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Challengers</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="index.html">Home</a>
+                        <a class="mdl-navigation__link" href="">About</a>
+                        <a class="mdl-navigation__link" href="level_1.html">Practice</a>
+                    </nav>
+                </div>
+            </header>
+            <!-- menu-->
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Challengers</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Algebra</a>
+                    <a class="mdl-navigation__link" href="">Slope</a>
+                    <a class="mdl-navigation__link" href="">Trigonometry</a>
+                    <a class="mdl-navigation__link" href="">...</a>
+                </nav>
+            </div>
+
+    <h3 id="project">Hector's Math Code F(y)</h3>
+        <img id="circleImage" src="math.png"  alt="byte" class="center" width="100" height="100"/>
+  
+</a>
+    <div class="center">
+    <h4 >Find the slope-intercept form of the equation of the line passing through the points:</h4>
+        <div class="slopeContainer">
+            <h6>(x1,y1) - (x2,y2)</h6>
+            
+           x1: <input id="x1" type="myText" size="1"> 
+           y1: <input id="y1" type="myText" size="1"> 
+           x2: <input id="x2" type="myText" size="1"> 
+           y2: <input id="y2" type="myText" size="1"> 
+        </div>
+    <p>m = change in y / change in x</p>
+  <!-- <input id="digitAge" type="myText"> testing-->
+
+        <button onclick="findSlope()" class="btn"  >Find Slope</button>
+       <!--  <button onclick="getEquationFormula()" class="btn"  >Slope Equation</button>-->
+        <input type="reset"  class="btn"  onClick="window.location.reload()" value="Reset">
+    
+  
+    <p id="showResult"></p>
+
+</div>
+</body>
+</html>
