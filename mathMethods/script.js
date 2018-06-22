@@ -35,7 +35,7 @@ function SlopeEquation() {
     var slope = getSlopeThatPassedThrough2Points(x1, y1, x2, y2);
     var answer = getSlopeEquation(x1,y1,slope);
 
-    console.log(answer);
+    console.log("index" + answer);
 
     if (x1.length == 0 || y1.length == 0 || x2.length == 0 || y2.length == 0) {
         window.alert("Enter a digit");
@@ -63,32 +63,32 @@ function SlopeEquation() {
     console.log("they were equal");
  }
  
-    var answer = getSlopeThatPassedThrough2Points(x1, y1, x2, y2);
-    answer = Math.round(100*answer)/100;// round X to hundredths round X to hundredths
-    console.log(answer);
+    var generatedEquationSlope = getSlopeThatPassedThrough2Points(x1, y1, x2, y2);
+    generatedEquationSlope = Math.round(100*generatedEquationSlope)/100;// round X to hundredths round X to hundredths
+    console.log("slope submit: "+generatedEquationSlope);
 
  document.getElementById("showPoints").innerHTML = "(" + x1 + " ," + y1 + ") , " + "(" + x2 + " ," + y2 + ")";
 function submitAnswer() {
     //rotate the image
-    rotate();
+  //  rotate();
     //get line values of the lines
    // var answer = getSlopeThatPassedThrough2Points(x1, y1, x2, y2);
    
     var userAnser = document.getElementById("userAnswer").value;
-    if(userAnser==answer){
-      //  console.log("correct" +  userAnser + "<- user" + answer);
+    if(userAnser==generatedEquationSlope){
+        console.log("correct");
         document.getElementById("answerIcon").innerHTML =" ";
         document.getElementById("answerIcon").className = "fa fa-check-circle-o";
         document.getElementById("answerIcon").style = "font-size:48px;color:green";
     }
     else{
-    // console.log("incorrect" +  userAnser + "<- user" + answer);
+        console.log("incorrect");
         document.getElementById("answerIcon").innerHTML =" ";
         document.getElementById("answerIcon").className = "fa fa-close";
         document.getElementById("answerIcon").style = "font-size:48px;color:red";
     }
    
-   setRotateBack();
+ //  setRotateBack();
 }
 
 function getEquationFormula() {
@@ -108,12 +108,30 @@ function getSlopeThatPassedThrough2Points(x1, y1, x2, y2) {
 }
 
 //return a string or the equation 
+
+function getBFromSlopeEquation(){
+    // y = mx - b 
+    var b = y1;
+   // var mx;
+    var x =1;
+    //initial equation : y-y1 = m(x-x1) 
+    //1) negate x1 and y1
+    x1 = -1 * x1;
+    y1 = -1 * y1;
+    //2)  m(x-x1) 
+    mx = generatedEquationSlope * x;
+    b = generatedEquationSlope * x1;
+    //3) find y, by passing y to the other part of the equation 
+    b = b + (-1 * y1);
+    return b;
+}
+
 function getSlopeEquation(x1, y1, slope) {
     
     var equation = "";
     // y = mx - b 
-    var mx;
     var b =1;
+    var mx;
     var x =1;
     //initial equation : y-y1 = m(x-x1) 
 
@@ -146,6 +164,23 @@ function setRotateBack(){
     document.getElementById("circleByteRotate").id = "circleImage";
     console.log("id back");
 }
+
+console.log("draw this line:" +  "(" + x1 + " ," + y1 + ") , " + "(" + x2 + " ," + y2 + ")");
+//slope, x and y
+
+
+var bEquation = getBFromSlopeEquation();
+console.log(getSlopeEquation(x1,y1,generatedEquationSlope));
+myGraph.drawEquation(function(x) {
+   // var b = getBFromSlopeEquation((x1,y1,slopeForsEQ));
+    console.log(generatedEquationSlope+" " + x + " " +bEquation);
+    return (generatedEquationSlope*x) + bEquation;
+  }, 'aqua', 3);
+
+
+
+
+
 
 
 
