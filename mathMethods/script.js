@@ -76,12 +76,14 @@ function submitAnswer() {
    
     var userAnser = document.getElementById("userAnswer").value;
     if(userAnser==answer){
-        console.log("correct" +  userAnser + "<- user" + answer);
+      //  console.log("correct" +  userAnser + "<- user" + answer);
+        document.getElementById("answerIcon").innerHTML =" ";
         document.getElementById("answerIcon").className = "fa fa-check-circle-o";
         document.getElementById("answerIcon").style = "font-size:48px;color:green";
     }
     else{
-        console.log("incorrect" +  userAnser + "<- user" + answer);
+    // console.log("incorrect" +  userAnser + "<- user" + answer);
+        document.getElementById("answerIcon").innerHTML =" ";
         document.getElementById("answerIcon").className = "fa fa-close";
         document.getElementById("answerIcon").style = "font-size:48px;color:red";
     }
@@ -91,7 +93,7 @@ function submitAnswer() {
 
 function getEquationFormula() {
     document.getElementById("answerIcon").innerHTML = "m = (y2 - y1) / (x2 - x1) ";
-    document.getElementById("answerIcon").className ="";
+    document.getElementById("answerIcon").className =" ";
     document.getElementById("answerIcon").style = "font-size:48px;color:white";
 }
 

@@ -31,7 +31,12 @@ function getPost() {
     }
     //facebook post for github 100 days of Code
     var facebookPost = "#100DaysOfCode Day " + days[challengerDays]; 
-    facebookPost+= " with Mehmet, Momo, Eddie. <br> " ;
+    if(document.getElementById("option-0").checked){
+        facebookPost+= " with Mehmet, Momo, Eddie. <br> " ;
+    }//just 2 people to test 
+    else{
+        facebookPost+= " with Hector, Eddie, Momo. <br> " ;
+    }
     facebookPost+= "Code Description: " + "<br> \n" ;
     facebookPost+= code + " <br>";
     facebookPost+= "Why : " + "<br>" ;
