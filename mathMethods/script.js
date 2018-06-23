@@ -50,10 +50,20 @@ function SlopeEquation() {
     //console.log( Math.floor((Math.random() * 10) + 1))
 //}
  //set values 1-10
- var x1 = Math.floor((Math.random() * 10) + 1);
+ /**
+  var x1 = Math.floor((Math.random() * 10) + 1);
  var y1 = Math.floor((Math.random() * 10) + 1);
  var x2 = Math.floor((Math.random() * 10) + 1);
  var y2 = Math.floor((Math.random() * 10) + 1);
+
+  */
+ 
+ //testing 
+ var x1 = 1;// Math.floor((Math.random() * 10) + 1);
+ var y1 = 2;// Math.floor((Math.random() * 10) + 1);
+ var x2 = 3;// Math.floor((Math.random() * 10) + 1);
+ var y2 = 4;// Math.floor((Math.random() * 10) + 1);
+
 
  while(x2-x1==0){
    // x1 =1;// Math.floor((Math.random() * 10) + 1);
