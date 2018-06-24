@@ -13,5 +13,10 @@ Code at least 1 hour a day; otherwise, I will pay $5 to a fund for fun at the en
 9. [Challenger html progress update](https://github.com/…/100DaysOfC…/tree/cleanUpJsCode/googleMD) (Version 2)
 10. [Writing my own math library](https://github.com/…/100DaysOfCo…/tree/math/myOwnMathMethods) : slope
 11. [Multiple Links](https://github.com/…/100DaysOfCodi…/tree/links/multipleLinks) (Version 1.0)
-
+12. [100 Days of code's web - Facebook post template](https://github.com/…/100DaysOfCodi…/tree/links/multipleLinks) (Version 1.0)
+13. [Slope practice exercise, no graph](https://github.com/chini5ko/100DaysOfCoding/tree/master/mathMethods) (Version 1.0)
+14. [Slope practice exercise, graph bug](https://github.com/chini5ko/100DaysOfCoding/tree/master/mathMethods) (Version 1.1)
+15. [Arduino light alarm](https://github.com/chini5ko/100DaysOfCoding/tree/master/arduinoFunctions/work20Rest5Minute) (Version 1.0)
+16. [Slope practice exercise with a graph woring!](https://github.com/chini5ko/100DaysOfCoding/tree/master/mathMethods) (Version 1.2)
 (This readme is weekly updated);
+
