@@ -21,15 +21,15 @@ void loop() {
   int minute = second * 60;
 
   //set up your time do something
-  int work = 20 * minute; //could be code, study or even like do nothing (which is doing something)
+  int work = 20 * minute; //could be code or study 
   int rest = 5 * minute;
   
   //on white
-  digitalWrite(white, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(white, HIGH);  
   delay(work); 
   digitalWrite(white, LOW);
   //rest when is red 
-  digitalWrite(red, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(red, HIGH);   
   delay(rest); 
   digitalWrite(red, LOW);            
 }
