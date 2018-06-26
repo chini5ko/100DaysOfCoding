@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<!-- Github: chini5ko -->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kit</title>
+  <title>Startup Kit</title>
 
   <!--Google Links && APIs -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -25,7 +26,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Startup Kit</span>
+        <span class="mdl-layout-title ">Startup Kit</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
           <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -47,27 +48,113 @@
       </div>
       <!--header end-->
     </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+    <div id="drawerDiv" class="mdl-layout__drawer">
+      <span id="drawer-title" class="mdl-layout-title  mdl-shadow--2dp">Menu</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <a id="topOption" class="mdl-navigation__link" href="">Company</a>
+        <a class="mdl-navigation__link" href="">Marketing</a>
+        <a class="mdl-navigation__link" href="">Product</a>
+        <a class="mdl-navigation__link" href="">Finance</a>
+        <a class="mdl-navigation__link" href="">Customers</a>
+        <a class="mdl-navigation__link" href="">Investment</a>
+        <a class="mdl-navigation__link" href="">Calendar</a>
       </nav>
     </div>
     <!--drawer end-->
     <main class="mdl-layout__content">
       <div class="page-content">
+        <!-- first row -->
         <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><h1>cuadro 1</h1></div>
-            
-            <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><h1>cuadro 2</h1></div>
-            <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><h1>cuadro 3</h1></div>
+          <div id="companyName" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+            <h1> Company </h1>
+            <i id="faIcon" class="fa fa-institution" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+          </div>
+          <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+            <h1> Mission</h1>
+            <i id="faIcon" class="fa fa-flag" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+          </div>
+
+          <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+            <h1> Team </h1>
+            <i id="faIcon" class="fa fa-users" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+          </div>
         </div>
+        <!-- second row separation -->
+        <div class="mdl-grid">
+          <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+            <p></p>
+          </div>
+          <div id="line" class="mdl-color--black mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+            <h6 style="color:white"> Finance</h6>
+
+            <i id="faIcon" class="fa fa-dollar" style="font-size:48px;color:rgb(6, 179, 35);"></i>
+            <!-- MDL Progress Bar with Buffering -->
+        <div id="p3" class="mdl-progress mdl-js-progress"></div>
+
+          </div>
+          <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+            <p></p>
+          </div>
+        </div>
+        <!-- third row row -->
+        <div class="mdl-grid">
+          <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+            <p></p>
+          </div>
+          <div id="line" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+
+            <i id="" class="fa fa-github" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+            <i id="" class="fa fa-facebook-square" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+            <i id="" class="fa fa-instagram" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+
+          </div>
+          <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Fourth row separation -->
+
+        <!-- Firth row separation -->
+        <div class="mdl-grid">
+          <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+            <p></p>
+          </div>
+          <div id="line" class="mdl-color--black mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+            <h6 style="color:white"> Contact</h6>
+            <i id="faIcon" class="fa fa-address-card" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+          </div>
+          <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+            <p></p>
+          </div>
+        </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Chinisko</div>
+            <ul class="mdl-mini-footer__link-list">
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Github: chini5ko</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <!--sixth row-->
       </div>
-      <!-- Your content end here -->
-    </main>
+
+  </div>
+
+
+  </div>
+  <!-- end page content -->
+
+  </main>
+
+
+  <!-- Footer -->
+
 
   </div>
 

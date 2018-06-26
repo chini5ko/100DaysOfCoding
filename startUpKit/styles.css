@@ -1,6 +1,7 @@
 
 main{
-    color: white;
+    color: black;
+    text-align: center;
 
 }
 
@@ -17,10 +18,94 @@ header{
 
 }
 
+/* left menu for links **/
+.mdl-layout__drawer{
+background: rgb(6, 124, 179);
+color: black;
+}
+.mdl-navigation{
+    background:rgb(136, 130, 130);  
+    font-weight: bold;
+}
+
+#drawer-title{
+    color: black;
+    background: rgb(6, 124, 179);
+    border-bottom: 1px solid white;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+    border-bottom: 1px solid white;
+    color: black;
+    font-weight: bold; 
+}
+
+
 /* main stuff **/
 .mdl-layout__content{
     background: rgb(238, 236, 236);
+    
 }
 .mdl-grid{
-    background:rgb(151, 124, 124);   
+    background:rgb(136, 130, 130);   
+}
+
+#faIcon{
+    margin-bottom: 25px;
+}
+
+#account{
+    color: black;
+    text-align: center;
+}
+
+#team{
+    
+}
+
+/* Square card */
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/demos/img.png') bottom right 15% no-repeat #46B6AC;
+}
+
+/* rectangle card */
+.demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../assets/demos/welcome_card.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+
+  /* Progress bar */
+.mdl-progress>.progressbar{
+    background-color:rgb(6, 179, 35);
+    opacity: 80;
+    z-index: 1;
+    left: 0;
+}
+
+.mdl-progress:not(.mdl-progress--indeterminate):not(.mdl-progress--indeterminate)>.auxbar, .mdl-progress:not(.mdl-progress__indeterminate):not(.mdl-progress__indeterminate)>.auxbar{
+    background-image: linear-gradient(to right,rgba(12, 238, 61, 1.9999),rgba(0, 0, 0, 0.7)),linear-gradient(to right,rgb(63,81,181),rgb(63,81,181));
+  }
+
+/* Footer */
+.mdl-mini-footer{
+   color: black;
+}
+
+.mdl-logo{
+    color: rgb(6, 124, 179);
+    font-weight: bold;
 }
