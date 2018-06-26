@@ -97,7 +97,7 @@ color: black;
 }
 
 .mdl-progress:not(.mdl-progress--indeterminate):not(.mdl-progress--indeterminate)>.auxbar, .mdl-progress:not(.mdl-progress__indeterminate):not(.mdl-progress__indeterminate)>.auxbar{
-    background-image: linear-gradient(to right,rgba(12, 238, 61, 1.9999),rgba(0, 0, 0, 0.7)),linear-gradient(to right,rgb(63,81,181),rgb(63,81,181));
+    background-image: linear-gradient(to right,rgba(12, 238, 61, 1.9999),rgba(255, 255, 255, 0.9)),linear-gradient(to right,rgb(63,81,181),rgb(63,81,181));
   }
 
 /* Footer */
@@ -116,6 +116,15 @@ color: black;
  }
 
  /** Finance web**/
+#saveProfit{
+    margin-bottom: 15px;
+}
+
  #financeButtons{
-     padding-top: 13px;
+     padding:5%;
+ }
+
+ .mdl-button {
+     background: rgb(6, 124, 179);
+     color: white;
  }

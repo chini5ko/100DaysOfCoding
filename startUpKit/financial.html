@@ -70,13 +70,13 @@
                         <i id="faIcon" class="fa fa-institution" style="font-size:48px;color:rgb(6, 124, 179);"></i>
                     </div>
                     <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
-                        <h2> Cash Flow</h2>
-                        <i id="faIcon" class="fa fa-flag" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <h2> Profit</h2>
+                        <i id="faIcon" class="fa fa-dollar" style="font-size:48px;color:rgb(6, 124, 179);"></i>
                     </div>
 
                     <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
                         <h2> Accounting </h2>
-                        <i id="faIcon" class="fa fa-users" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <i id="faIcon" class="fa fa-calendar" style="font-size:48px;color:rgb(6, 124, 179);"></i>
                     </div>
                 </div>
 
@@ -87,63 +87,95 @@
 
                         <!-- Flat button with ripple -->
                         <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                            Button
+                            Jan
                         </button>
                         <P></P>
                         <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                            Button
+                            Feb
                         </button>
                         <P></P>
                         <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                            Button
+                            Mar
                         </button>
 
                     </div>
 
-                   
+                    <!-- APP -->
                     <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
-                        <h2> Cash Flow</h2>
-                        <i id="faIcon" class="fa fa-flag" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <h5> Profit</h5>
+                        <!-- Numeric Textfield -->
+                        <form action="#revenue">
+                            
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input  id="revenue" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" >
+                                <label class="mdl-textfield__label" for="sample2">Total income : $</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                            </div>
+                        </form>
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input id="cost" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" >
+                                <label class="mdl-textfield__label" for="sample2">Total cost : $</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                            </div>
+                        </form>
+                        <button onclick="save()" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Save
+                            </button>
+
                     </div>
 
                     <div id="financeButtons" class="mdl-shadow--2dp mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
 
-                            <!-- Flat button with ripple -->
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                Button
-                            </button>
-                            <P></P>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                Button
-                            </button>
-                            <P></P>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                Button
-                            </button>
-    
-                        </div>
-                    
+                        <!-- Flat button with ripple -->
+                        <button id="greenBtn" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            APR
+                        </button>
+                        <P></P>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            MAY
+                        </button>
+                        <P></P>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            JUN
+                        </button>
+
+                    </div>
+
                 </div>
 
+                 <!-- end of calculation-->
+
+                <div class="mdl-grid">
+                        <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+    
+                        </div>
+    
+                        <!-- APP -->
+                        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
+                            <h5 id="show"> $ </h5>
+                            <!-- Numeric Textfield -->
+                            
+                        </div>
+                        <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+    
+                            </div>
+    
+                    </div>
+                    <!-- Show Result-->
+
 
             </div>
-
-            <div class="mdl-grid">
-                <h1></h1>
-            </div>
-            <div class="mdl-grid">
-                <h1></h1>
-            </div>
-            <div class="mdl-grid"></div>
-            <div class="mdl-grid"></div>
 
             <!-- third row row -->
             <div class="mdl-grid">
-                <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+                <div id="line" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
                     <p></p>
                 </div>
-                <div id="line" class="mdl-color--black mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-                    <i class="fa fa-dollar" style="font-size:48px;color:rgb(6, 179, 35);"></i>
+                <div id="line" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+                    <i class="fa fa-dollar" style="font-size:20px;color:rgb(6, 179, 35);"></i>
+                    <i class="fa fa-dollar" style="font-size:20px;color:rgb(6, 179, 35);"></i>
+                    <i class="fa fa-dollar" style="font-size:20px;color:rgb(6, 179, 35);"></i>
                     <!-- MDL Progress Bar with Buffering -->
                     <div id="p3" class="mdl-progress mdl-js-progress"></div>
 
