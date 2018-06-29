@@ -1,0 +1,83 @@
+.demo-layout-transparent {
+    background: url('../img/cublue.jpg') center / cover;
+    background: rgb(255, 255, 255);
+   }
+
+.mdl-layout__header-row{
+    background:black;
+}
+
+.mdl-navigation, .mdl-layout__drawer{
+    background: black;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+     /* This background is dark, so we set text to white. Use 87% black instead if
+        your background is light. */
+     color: rgb(0, 0, 0);
+   }
+
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.main-raised {
+    margin: 50px 30px 0px;
+    border-radius: 8px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+.section {
+    padding: 70px 0;
+  }
+  
+.container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    margin-top: 30px;
+    /* margin-bottom: 25px; */
+    min-height: 32px;
+}
+
+
+.snippedPadding{
+    margin-left: 40%;
+    padding-right: 40%;  
+}
+
+.mdl-progress>.bufferbar {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 25, 0, 0.7)),linear-gradient(to right,rgb(0,0,0),rgb(0,0,0));
+    z-index: 0;
+    left: 0;
+}
+
+
+h5{
+    text-align: left;
+    margin-left: 40%;
+    margin-right: 39%;
+}
+
+
+.fundContainer>.snippedPadding>.mdl-progress>.progressbar {
+    background-color: green;
+    z-index: 1;
+    left: 0;
+}
+
+#p1>.mdl-progress>.progressbar  {
+    background-color: #6e6868;
+    z-index: 1;
+    left: 0;
+}
+
+

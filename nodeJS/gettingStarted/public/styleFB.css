@@ -1,0 +1,100 @@
+
+
+body{
+    background-color:white;
+}
+
+p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+h2{
+    font-size: 23px;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    display: block;
+    border-style: solid;
+    padding: 3px;
+    border-color: rgb(167, 167, 194);
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+h4{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+  div{
+      text-align: center;
+      font-size: 30px;
+  }
+
+  #showBinary{
+      font-size: 50px;
+      color: #000000;
+  }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#circleByteRotate{
+    animation-name: spin;
+    animation-duration: 300ms;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+input{
+    font-size: 20px;
+}
+
+.buttons{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+br{
+    display: block;
+    margin: 1px 0;
+}
