@@ -17,6 +17,5 @@
 
     grossProfit = revenue-cost;
 
-    document.getElementById("show").innerHTML = grossProfit;
-
+    document.getElementById("show").innerHTML = "$" + grossProfit;
   }
