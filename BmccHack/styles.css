@@ -1,0 +1,50 @@
+
+main{
+    color: black;
+    text-align: center;
+
+}
+
+header{
+    color: rgb(42, 161, 161);
+}
+
+.mdl-layout__header{
+    background: rgba(248, 122, 5, 0.877);
+}
+
+.mdl-layout__header-row{
+    background: rgba(248, 122, 5, 0.877);
+
+}
+
+/*right menu*/
+a {
+    color: rgb(211, 51, 30);
+    font-weight: 500;
+    text-decoration:beige;
+}
+
+/* Square card */
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/demos/img.png') bottom right 15% no-repeat #46B6AC;
+}
+
+/* button card */
+.mdl-button.mdl-button--colored{
+    background: rgba(248, 122, 5, 0.877);
+}
+
+    /*3 main options */
+  .mdl-button.mdl-button--colored {
+    color: rgb(241, 241, 241);
+}
+
+ 
