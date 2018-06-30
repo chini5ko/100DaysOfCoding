@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- Github: chini5ko -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accounting</title>
+
+    <!--Google Links && APIs -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!--My  files -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="accounting.js" defer></script>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title ">Accounting</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    </div>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                    <li class="mdl-menu__item"><a href="index.html">Home</a></li>
+                    <li class="mdl-menu__item">Learn more</li>
+                    <li class="mdl-menu__item">Contact</li>
+                </ul>
+            </div>
+            <!--header end-->
+        </header>
+        <div id="drawerDiv" class="mdl-layout__drawer">
+            <span id="drawer-title" class="mdl-layout-title  mdl-shadow--2dp">Menu</span>
+            <nav class="mdl-navigation">
+                <a id="topOption" class="mdl-navigation__link" href="">Company</a>
+                <a class="mdl-navigation__link" href="">Marketing</a>
+                <a class="mdl-navigation__link" href="">Product</a>
+                <a class="mdl-navigation__link" href="financial.html">Finance</a>
+                <a class="mdl-navigation__link" href="">Customers</a>
+                <a class="mdl-navigation__link" href="">Investment</a>
+                <a class="mdl-navigation__link" href="">Calendar</a>
+            </nav>
+        </div>
+        <!--drawer end-->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- first row -->
+                <div class="mdl-grid">
+                    <div id="companyName" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+                        <h2> Assets </h2>
+                        <i id="faIcon" class="fa fa-cubes" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <i id="faIcon" class="fa fa-institution" style="font-size:48px;color:rgb(91, 97, 100);"></i>
+                        <i id="faIcon" class="fa fa-money" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="accounting.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+                        <h2> Liabilities</h2>
+                        <i id="faIcon" class="fa fa-sort-amount-desc" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <i id="faIcon" class="fa fa-money" style="font-size:48px;color:rgb(153, 46, 46);"></i>
+                        <i id="faIcon" class="fa fa-sticky-note-o" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="accounting.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+                        <h2> Equity</h2>
+                        <i id="faIcon" class="fa fa-calendar" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <i id="faIcon" class="fa fa-pie-chart" style="font-size:48px;color:rgb(66, 177, 39);"></i>
+                        <i id="faIcon" class="fa fa-users" style="font-size:48px;color:rgb(6, 124, 179);"></i>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="accounting.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- second row separation -->
+                <div class="mdl-grid">
+                    <div id="monthButtons" class="mdl-shadow--2dp mdl-cell mdl-cell--2-col mdl-cell--4-col-phone  mdl-cell--8-col-tablet">
+
+                        <!-- Flat button with ripple -->
+                        <div class="months">
+
+                            <button onclick="janBtn()" id="month0" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Jan
+                            </button>
+                            <P></P>
+                            <button onclick="febBtn()" id="month1" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Feb
+                            </button>
+                            <P></P>
+                            <button onclick="marBtn()"   id="month2" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Mar
+                            </button>
+                            <P></P>
+                            <button id="month3" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Apr
+                            </button>
+                            <P></P>
+                            <button id="month4" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                May
+                            </button>
+                            <P></P>
+                            <button id="month5" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Jun
+                            </button>
+                            <P></P>
+                            <button id="month6" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Jul
+                            </button>
+                            <P></P>
+                            <button id="month7" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Agu
+                            </button>
+                            <P></P>
+                            <button id="month8" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Sep
+                            </button>
+                            <P></P>
+                            <button id="month9" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Oct
+                            </button>
+                            <P></P>
+                            <button id="month10" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Nov
+                            </button>
+                            <P></P>
+                            <button id="month11" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Dec
+                            </button>
+                            <P></P>
+                        </div>
+
+                    </div>
+
+                    <!-- APP -->
+                    <div id="mainFuction" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
+                        <h2 id="accountingOption"> Hello my fellow Entrepreneur <br><br> V.1.0.1</h2>
+                       
+                        <p id="showTime">
+                                <table id="myTable" align="center">
+                                        <tr >
+                                          
+                                        </tr>
+                                       
+                                      </table>
+
+                        </p>
+                        <!-- table  -->
+                      <h1 id="showIncome"></h1>
+                      <h1 id="showExpense"></h1>
+                      
+                      <h1 id="showNet"></h1>
+                        <div class="mdl-card__actions mdl-card--border">
+                        <button onclick="email()" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            V.1.0.1
+                        </button>
+                       
+                    </div>
+                    </div>
+
+                    <div id="accoutningButtons" class="mdl-shadow--2dp mdl-cell mdl-cell--2-col mdl-cell--4-col-phone  mdl-cell--8-col-tablet">
+
+                        <!-- Flat button with ripple -->
+                        <button onclick="balanceSheetBtn()" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            Balance Sheet
+                        </button>
+                        <P></P>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            Income Statement 
+                        </button>
+                        <P></P>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            Cash Flow
+                        </button>
+                        <P></P>
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Financial Statement
+                            </button>
+                            <p></p>
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                    Financial Ratios
+                                </button>
+
+                    </div>
+
+                </div>
+
+                <!-- end of calculation-->
+
+                <div class="mdl-grid">
+                    <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+
+                    </div>
+
+                    <!-- APP -->
+                    <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
+                        <h5 id="show"> $ </h5>
+                        <!-- Numeric Textfield -->
+
+                    </div>
+                    <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+
+                    </div>
+
+                </div>
+                <!-- Show Result-->
+
+
+            </div>
+
+            <!-- third row row -->
+
+
+
+            <!-- Fourth row separation -->
+
+            <!-- Firth row separation -->
+
+            <footer id="footer" class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Chinisko</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Github: chini5ko</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <!--sixth row-->
+    </div>
+
+    </div>
+
+
+    </div>
+    <!-- end page content -->
+
+    </main>
+
+
+    <!-- Footer -->
+
+
+    </div>
+
+</body>
+
+</html>

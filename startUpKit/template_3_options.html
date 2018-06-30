@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Financial</title>
+    <title>templte 1.0</title>
 
     <!--Google Links && APIs -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -26,7 +26,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title ">Startup Kit - Financial</span>
+                <span class="mdl-layout-title ">Template 1.0 (3 options)</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                     <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -41,9 +41,9 @@
                     <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-                    <li class="mdl-menu__item">About</li>
+                    <li class="mdl-menu__item">Home</li>
+                    <li class="mdl-menu__item">Learn more</li>
                     <li class="mdl-menu__item">Contact</li>
-                    <li class="mdl-menu__item">Legal information</li>
                 </ul>
             </div>
             <!--header end-->
@@ -64,30 +64,21 @@
         <main class="mdl-layout__content">
             <div class="page-content">
                 <!-- first row -->
-
                 <div class="mdl-grid">
                     <div id="companyName" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
-                        <h2> Bank </h2>
+                        <h2> option 1 </h2>
                         <i id="faIcon" class="fa fa-institution" style="font-size:48px;color:rgb(6, 124, 179);"></i>
                     </div>
                     <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
-                        <h2> Profit</h2>
+                        <h2> option 2</h2>
                         <i id="faIcon" class="fa fa-dollar" style="font-size:48px;color:rgb(6, 124, 179);"></i>
                     </div>
 
-
-
                     <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-                        <h2> Accounting </h2>
+                        <h2> option 3 </h2>
                         <i id="faIcon" class="fa fa-calendar" style="font-size:48px;color:rgb(6, 124, 179);"></i>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a href="accounting.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                               Numbers
-                            </a>
-                        </div>
                     </div>
                 </div>
-                </a>
 
 
                 <!-- second row separation -->
@@ -111,9 +102,26 @@
 
                     <!-- APP -->
                     <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
-                        <h5> Report 2018</h5>
+                        <h5> Profit</h5>
                         <!-- Numeric Textfield -->
-                        <h1>+20%</h1>
+                        <form action="#revenue">
+                            
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input  id="revenue" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" >
+                                <label class="mdl-textfield__label" for="sample2">Total income : $</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                            </div>
+                        </form>
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input id="cost" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" >
+                                <label class="mdl-textfield__label" for="sample2">Total cost : $</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                            </div>
+                        </form>
+                        <button onclick="save()" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                                Save
+                            </button>
 
                     </div>
 
@@ -136,46 +144,31 @@
 
                 </div>
 
-                <!-- end of calculation-->
+                 <!-- end of calculation-->
 
                 <div class="mdl-grid">
-                    <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
-
+                        <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+    
+                        </div>
+    
+                        <!-- APP -->
+                        <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
+                            <h5 id="show"> $ </h5>
+                            <!-- Numeric Textfield -->
+                            
+                        </div>
+                        <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+    
+                            </div>
+    
                     </div>
-
-                    <!-- APP -->
-                    <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
-                        <h5 id="show"> $ </h5>
-                        <!-- Numeric Textfield -->
-
-                    </div>
-                    <div class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
-
-                    </div>
-
-                </div>
-                <!-- Show Result-->
+                    <!-- Show Result-->
 
 
             </div>
 
             <!-- third row row -->
-            <div class="mdl-grid">
-                <div id="line" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
-                    <p></p>
-                </div>
-                <div id="line" class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-                    <i class="fa fa-dollar" style="font-size:20px;color:rgb(6, 179, 35);"></i>
-                    <i class="fa fa-dollar" style="font-size:20px;color:rgb(6, 179, 35);"></i>
-                    <i class="fa fa-dollar" style="font-size:20px;color:rgb(6, 179, 35);"></i>
-                    <!-- MDL Progress Bar with Buffering -->
-                    <div id="p3" class="mdl-progress mdl-js-progress"></div>
-
-                </div>
-                <div id="line" class=" mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
-                    <p></p>
-                </div>
-            </div>
+            
 
 
             <!-- Fourth row separation -->

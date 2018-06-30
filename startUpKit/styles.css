@@ -88,6 +88,11 @@ color: black;
     color: #fff;
   }
 
+    /*3 main options */
+  .mdl-button.mdl-button--colored {
+    color: rgb(241, 241, 241);
+}
+
   /* Progress bar */
 .mdl-progress>.progressbar{
     background-color:rgb(6, 179, 35);
@@ -128,3 +133,29 @@ color: black;
      background: rgb(6, 124, 179);
      color: white;
  }
+ /** Accounting.html web**/
+ #accoutningButtons{
+     padding-top: 10%;
+ }
+
+ /** table **/
+ table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #2070cc07;
+}
+
