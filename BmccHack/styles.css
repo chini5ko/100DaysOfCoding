@@ -9,6 +9,8 @@ header{
     color: rgb(42, 161, 161);
 }
 
+
+
 .mdl-layout__header{
     background: rgba(248, 122, 5, 0.877);
 }
@@ -16,6 +18,25 @@ header{
 .mdl-layout__header-row{
     background: rgba(248, 122, 5, 0.877);
 
+}
+
+#top{
+    background: url('../bmcc.jpg') center / cover;
+    height: 550px;
+    color: rgba(255, 212, 19, 0.980);
+}
+.steps{
+    text-align: left;
+    margin-left: 90px;
+}
+
+.mdl-button--fab {
+    background: rgba(248, 122, 5, 0.877);
+    color: white;
+}
+
+.page-content{
+    background: rgba(248, 94, 5, 0.555);
 }
 
 /*right menu*/
@@ -33,8 +54,7 @@ a {
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
-  background:
-    url('../assets/demos/img.png') bottom right 15% no-repeat #46B6AC;
+  
 }
 
 /* button card */
@@ -47,4 +67,8 @@ a {
     color: rgb(241, 241, 241);
 }
 
+.mdl-mini-footer{
+    padding: 15px 16px;
+   background:  rgba(248, 122, 5, 0.877);
+}
  
