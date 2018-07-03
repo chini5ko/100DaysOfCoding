@@ -1,12 +1,12 @@
 function boxBlur(image) {
     
-    var output = new Array(); //
+    var output = new Array(); 
+
+    for(var i = 0; i<image.length -2 ;i++)
+    output[i] = new Array();
+ 
     
-   for(var i = 0; i<image[0].length -2 ;i++){
-       output[i] = new Array();
-   }
-    
-    console.log(output.length);
+    console.log(image.length);
     
     var valueOfTheMidelPixel = 0;
     
@@ -31,13 +31,6 @@ function boxBlur(image) {
             output[i-1].push(valueOfTheMidelPixel);
            
         }  
-
     }
-    
-   
-  
     return output;
-    
-    
-
 }
