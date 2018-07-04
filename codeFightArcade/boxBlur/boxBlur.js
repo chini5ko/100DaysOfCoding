@@ -1,5 +1,5 @@
 function boxBlur(image) {
-    
+    //passed all tests 
     var output = new Array(); 
 
     for(var i = 0; i<image.length -2 ;i++)
@@ -22,10 +22,6 @@ function boxBlur(image) {
             valueOfTheMidelPixel += image[i][j-1]   + image[i][j]   + image[i][j+1];
             valueOfTheMidelPixel += image[i+1][j-1] + image[i+1][j] + image[i+1][j+1];
             
-          //  console.log(image[i-1][j-1]+" " + image[i-1][j] + " " + image[i-1][j+1]);
-          //  console.log(image[i][j-1]+" " + image[i][j] + " " + image[i][j+1]);
-          //  console.log(image[i+1][j-1]+" " + image[i+1][j] + " " + image[i+1][j+1]);
-            
             valueOfTheMidelPixel  = Math.floor(valueOfTheMidelPixel / 9);
               //console.log("loop happened: "+ i +" "+ j);
             output[i-1].push(valueOfTheMidelPixel);
@@ -34,3 +30,7 @@ function boxBlur(image) {
     }
     return output;
 }
+
+          //  console.log(image[i-1][j-1]+" " + image[i-1][j] + " " + image[i-1][j+1]);
+          //  console.log(image[i][j-1]+" " + image[i][j] + " " + image[i][j+1]);
+          //  console.log(image[i+1][j-1]+" " + image[i+1][j] + " " + image[i+1][j+1]);
