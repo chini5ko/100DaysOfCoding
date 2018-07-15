@@ -18,5 +18,6 @@ Code at least 1 hour a day; otherwise, I will pay $5 to a fund for fun at the en
 14. [Slope practice exercise, graph bug](https://github.com/chini5ko/100DaysOfCoding/tree/master/mathMethods) (Version 1.1)
 15. [Arduino light alarm](https://github.com/chini5ko/100DaysOfCoding/tree/master/arduinoFunctions/work20Rest5Minute) (Version 1.0)
 16. [Slope practice exercise with a graph woring!](https://github.com/chini5ko/100DaysOfCoding/tree/master/mathMethods) (Version 1.2)
-(This readme is weekly updated);
+
+(This readme is monthly updated, hpefully);
 
