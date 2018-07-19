@@ -3,16 +3,17 @@
 //enable less secure app https://www.google.com/settings/security/lesssecureapps
 var nodemailer = require('nodemailer');
 
-var textMessage = "How was AWS?";
+
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'the101bytes@gmail.com',
-    pass: '******'
+    pass: '***'
   }
 });
 
+var textMessage = "links to Read <bk> https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide";
 var mailOptions = {
   from: 'the101bytes@gmail.com',
   to: 'hectorliangchan@gmail.com',
