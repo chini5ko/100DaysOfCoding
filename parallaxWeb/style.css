@@ -9,9 +9,7 @@ body, html {
     color:  RGB(108, 172, 228);
 }
 
-.w3-bar .w3-card .w3-animate-top .w3-white{
-    color:  GREEN;
-}
+
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
