@@ -12,7 +12,7 @@ body, html {
 
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-china, .bgimg-nyc, .bgimg-vzla {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,6 +35,33 @@ body, html {
 .bgimg-3 {
     background-image: url("route.jpg");
     min-height: 400px;
+}
+
+/* Cities and country image */
+.bgimg-china {
+    background-image: url("china.jpg");
+    min-height: 100%;
+    background-color:#f44336;
+   
+}
+
+.backRed{
+    background-color:#f44336;
+    opacity:0.55;
+}
+
+.bgimg-nyc {
+    background-image: url("nyc.jpg");
+    min-height: 100%;
+}
+
+.bgimg-vzla {
+    background-image: url("vzla.jpg");
+    min-height: 100%;
+}
+
+.w3-section{
+    margin-top: 0px!important; 
 }
 
 .w3-wide {letter-spacing: 10px;}
