@@ -5,6 +5,18 @@ body, html {
     line-height: 1.8;
 }
 
+#redTheme{
+    color:rgb(255, 49, 49);
+}
+
+#greenTheme{
+    color:rgb(49, 255, 49);
+}
+
+#blueTheme{
+    color:rgb(26, 174, 243);
+}
+
 #myNavbar{
     color:  rgb(2, 33, 105);
 }
@@ -39,25 +51,22 @@ body, html {
 
 /* Cities and country image */
 .bgimg-china {
-    background-image: url("china.jpg");
+    background-image: url("china.jpg") ;
     min-height: 100%;
-    background-color:#f44336;
-   
+    opacity: 0.8;
 }
 
-.backRed{
-    background-color:#f44336;
-    opacity:0.55;
-}
 
 .bgimg-nyc {
     background-image: url("nyc.jpg");
     min-height: 100%;
+    opacity: 0.8;
 }
 
 .bgimg-vzla {
     background-image: url("vzla.jpg");
     min-height: 100%;
+    opacity: 0.8;
 }
 
 .w3-section{

@@ -12,3 +12,32 @@ Github
 
 Mission: Type 1 Civilization. Hisory. 
 
+ <!-- bars -->
+  <div class="w3-col m12 w3-center w3-padding-large">
+
+    <p>
+      <b>
+        <i class="fa fa-hourglass-2 w3-margin-right"></i>Time</b>
+    </p>
+    <br>
+    <p class="w3-wide">
+      <i class="fa fa-code "></i>Coding </p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-green w3-center" style="width:50%">50%</div>
+    </div>
+    <p class="w3-wide">
+      <i class="fa fa-heartbeat w3-margin-right"></i>Exercising</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-red w3-center" style="width:20%">20%</div>
+    </div>
+    <p class="w3-wide">
+      <i class="fa fa-briefcase"></i>Working</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-blue w3-center" style="width:15%">15%</div>
+    </div>
+    <p class="w3-wide">
+      <i class="fa fa-child"></i>Resting</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-blue w3-center" style="width:15%">15%</div>
+    </div>
+  </div>
