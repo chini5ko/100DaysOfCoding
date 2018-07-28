@@ -7,10 +7,27 @@ body, html {
 
 #redTheme{
     color:rgb(255, 49, 49);
+
+}
+
+#redBoxShadow{
+    box-shadow: 0 0 20px rgba(250, 21, 21, 0.973);
+}
+
+#blueBoxShadow{
+    box-shadow: 0 0 20px rgba(16, 91, 253, 0.973);
+}
+
+#greenBoxShadow{
+    box-shadow: 0 0 20px rgba(29, 128, 26, 0.973);
+}
+
+#themeBoxShadow{
+    box-shadow: 0 0 20px rgba(172, 20, 177, 0.973);
 }
 
 #greenTheme{
-    color:rgb(49, 255, 49);
+    color:rgb(49, 255, 59);
 }
 
 #blueTheme{
@@ -21,6 +38,16 @@ body, html {
     color:  rgb(2, 33, 105);
 }
 
+/* logo image */
+#logoSize{
+    width: 85px;
+    height: 70px;
+}
+
+#humanDes{
+    padding-left: 32px;
+    padding-right: 32px;
+}
 
 
 /* Create a Parallax Effect */
@@ -35,6 +62,7 @@ body, html {
 .bgimg-1 {
     background-image: url('greenCol.jpg');
     min-height: 100%;
+    opacity: 0.5;
 }
 
 /* Second image (Portfolio) */
@@ -45,7 +73,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("route.jpg");
+    background-image: url("greenCol.jpg");
     min-height: 400px;
 }
 

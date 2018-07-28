@@ -39,5 +39,8 @@ function openCity(evt, cityName) {
        tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
     }
     document.getElementById(cityName).style.display = "block";
+    console.log(cityName);
+    var borderColor = "w3-border-";
+    //if()
     evt.currentTarget.firstElementChild.className += " w3-border-blue";
   }
