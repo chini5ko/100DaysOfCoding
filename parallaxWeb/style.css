@@ -5,6 +5,25 @@ body, html {
     line-height: 1.8;
 }
 
+a{
+    text-decoration: none;
+}
+
+#blueTextShadow{
+    color: white;
+    text-shadow: 0 0 20px rgb(12, 142, 248);
+}
+
+#greenTextShadow{
+    color: white;
+    text-shadow: 0 0 20px rgb(30, 206, 103);
+}
+
+#redTextShadow{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgb(206, 30, 45);
+}
+
 #redTheme{
     color:rgb(255, 49, 49);
 
@@ -27,7 +46,7 @@ body, html {
 }
 
 #greenTheme{
-    color:rgb(49, 255, 59);
+    color:rgb(56, 212, 64);
 }
 
 #blueTheme{
@@ -35,7 +54,9 @@ body, html {
 }
 
 #myNavbar{
-    color:  rgb(2, 33, 105);
+    color: white;
+    text-shadow: 0 0 20px rgb(35, 144, 233);
+    
 }
 
 /* logo image */
@@ -99,6 +120,7 @@ body, html {
 
 .w3-section{
     margin-top: 0px!important; 
+    
 }
 
 .w3-wide {letter-spacing: 10px;}

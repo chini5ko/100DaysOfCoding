@@ -44,3 +44,27 @@ function openCity(evt, cityName) {
     //if()
     evt.currentTarget.firstElementChild.className += " w3-border-blue";
   }
+
+  //wechat contact 
+  var idIsShown = false;
+function showWechat(){
+
+    if(idIsShown == false){
+        document.getElementById("showWechat").innerHTML = "Chinisko";
+        document.getElementById("showWechatQRCode").src = "wechatQRb.png";
+        document.getElementById("wechatIcon").className = "";
+        document.getElementById("context").innerHTML = "";
+
+        idIsShown =true;
+    }
+    else{
+        document.getElementById("showWechatQRCode").src = "none";
+        document.getElementById("showWechat").innerHTML = "";
+        document.getElementById("wechatIcon").className ="fa fa-wechat";
+        document.getElementById("context").innerHTML = "CONCTACT";
+        idIsShown= false;
+    }
+   
+    }
+ 
+
