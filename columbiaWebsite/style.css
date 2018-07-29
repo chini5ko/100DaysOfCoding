@@ -8,11 +8,17 @@ body, html {
 a{
     text-decoration: none;
 }
+#showWechatQRCode{
+    color: white;
+    box-shadow: 0 0 10px rgb(30, 206, 103);
+}
 
 #blueTextShadow{
     color: white;
     text-shadow: 0 0 20px rgb(12, 142, 248);
 }
+
+
 
 #greenTextShadow{
     color: white;
@@ -24,10 +30,6 @@ a{
     text-shadow: 0 0 20px rgb(206, 30, 45);
 }
 
-#redTheme{
-    color:rgb(255, 49, 49);
-
-}
 
 #redBoxShadow{
     box-shadow: 0 0 20px rgba(250, 21, 21, 0.973);
@@ -42,7 +44,20 @@ a{
 }
 
 #themeBoxShadow{
-    box-shadow: 0 0 20px rgba(172, 20, 177, 0.973);
+    box-shadow: 0 0 20px rgba(75, 30, 77, 0.973);
+}
+
+#redTheme{
+    color:rgb(255, 49, 49);
+}
+
+.redTheme{
+    color:rgb(255, 49, 49);
+}
+
+
+.blueTheme{
+    color:rgb(26, 174, 243);
 }
 
 #greenTheme{
@@ -52,6 +67,8 @@ a{
 #blueTheme{
     color:rgb(26, 174, 243);
 }
+
+
 
 #myNavbar{
     color: white;
@@ -121,6 +138,16 @@ a{
 .w3-section{
     margin-top: 0px!important; 
     
+}
+
+@media all and (max-width: 900px) {
+
+    #humanDes{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+	
 }
 
 .w3-wide {letter-spacing: 10px;}

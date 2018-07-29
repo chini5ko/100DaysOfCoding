@@ -52,19 +52,41 @@ function showWechat(){
     if(idIsShown == false){
         document.getElementById("showWechat").innerHTML = "Chinisko";
         document.getElementById("showWechatQRCode").src = "wechatQRb.png";
+        document.getElementById("showWechatQRCode").style = "width:300px; height:300px";
+        
         document.getElementById("wechatIcon").className = "";
         document.getElementById("context").innerHTML = "";
 
         idIsShown =true;
     }
     else{
-        document.getElementById("showWechatQRCode").src = "none";
+        document.getElementById("showWechatQRCode").style.visibility = "hidden";
         document.getElementById("showWechat").innerHTML = "";
         document.getElementById("wechatIcon").className ="fa fa-wechat";
         document.getElementById("context").innerHTML = "CONCTACT";
         idIsShown= false;
     }
    
-    }
+}
+
+//document.getElementById("npmBar").className += "w3-rightbar";
+
+
  
+//small devices
+if ( $(window).width() > 900) {      
+    //Add your javascript for large screens here 
+   
+} 
+  else {
+    //Add your javascript for small screens here 
+    document.getElementById("redBar").className += "w3-rightbar";
+    document.getElementById("redBar1").className += "w3-rightbar";
+    document.getElementById("redBar2").className += "w3-rightbar";
+    document.getElementById("redBar3").className += "w3-rightbar";
+    document.getElementById("blueBar").className += "w3-leftbar";
+    document.getElementById("blueBar1").className += "w3-leftbar";
+    document.getElementById("blueBar2").className += "w3-leftbar";
+    document.getElementById("blueBar3").className += "w3-leftbar";
+  }
 
