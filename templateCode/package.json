@@ -1,7 +1,7 @@
 {
   "name": "templatecode",
-  "version": "1.0.0",
-  "description": "A simple template for some of the languages\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D programming languages",
+  "version": "1.0.2",
+  "description": "Simplistic templates to start coding",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
