@@ -1,15 +1,20 @@
 {
   "name": "templatecode",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Simplistic templates to start coding",
+  "license": "MIT",
+  "repository": "chini5ko/templateCode",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "template",
-    "code"
+    "code",
+    "html",
+    "css",
+    "js",
+    "html js css"
   ],
-  "author": "Hector Liang <chinisko@outlook.com>",
-  "license": "MIT"
+  "author": "Hector Liasng <chinisko@outlook.com>"
 }

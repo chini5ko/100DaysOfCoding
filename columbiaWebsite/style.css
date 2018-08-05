@@ -68,12 +68,19 @@ a{
     color:rgb(26, 174, 243);
 }
 
+#navDemo{
+    background-color: #f1f1f181!important;
+}
 
 
 #myNavbar{
     color: white;
     text-shadow: 0 0 20px rgb(35, 144, 233);
-    
+}
+
+#myNavbarSmall{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 20px rgb(35, 144, 233);
 }
 
 /* logo image */
@@ -139,6 +146,15 @@ a{
     margin-top: 0px!important; 
     
 }
+
+/*table **/
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th{
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
 
 @media all and (max-width: 900px) {
 

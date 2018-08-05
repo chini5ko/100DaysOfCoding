@@ -1,3 +1,3 @@
-exports.printMsg = function() {
-  console.log("This is a message from the demo package");
+module.exports = function html() {
+  console.log("initialize HTML, just a message. Next verison will create a new html file");
 }
