@@ -1,0 +1,193 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+a{
+    text-decoration: none;
+}
+#showWechatQRCode{
+    color: white;
+    box-shadow: 0 0 10px rgb(30, 206, 103);
+}
+
+#blueTextShadow{
+    color: white;
+    text-shadow: 0 0 20px rgb(12, 142, 248);
+}
+
+
+
+#greenTextShadow{
+    color: white;
+    text-shadow: 0 0 20px rgb(30, 206, 103);
+}
+
+#redTextShadow{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgb(206, 30, 45);
+    font-size: 50px;
+}
+
+
+#redBoxShadow{
+    box-shadow: 0 0 20px rgba(250, 21, 21, 0.973);
+}
+
+#blueBoxShadow{
+    box-shadow: 0 0 20px rgba(16, 91, 253, 0.973);
+}
+
+#greenBoxShadow{
+    box-shadow: 0 0 20px rgba(29, 128, 26, 0.973);
+}
+
+#themeBoxShadow{
+    box-shadow: 0 0 20px rgba(75, 30, 77, 0.973);
+}
+
+#redTheme{
+    color:rgb(255, 49, 49);
+}
+
+.redTheme{
+    color:rgb(255, 49, 49);
+}
+
+
+.blueTheme{
+    color:rgb(26, 174, 243);
+}
+
+#greenTheme{
+    color:rgb(56, 212, 64);
+}
+
+#blueTheme{
+    color:rgb(26, 174, 243);
+}
+
+#navDemo{
+    background-color: #f1f1f181!important;
+}
+
+
+#myNavbar{
+    color: white;
+    text-shadow: 0 0 20px rgb(35, 144, 233);
+}
+
+#myNavbarSmall{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 20px rgb(35, 144, 233);
+}
+
+/* logo image */
+#logoSize{
+    width: 85px;
+    height: 70px;
+}
+
+#humanDes{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-bmcc, .bgimg-nyc, .bgimg-vzla, .bgimg-tram {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('greenCol.jpg');
+    min-height: 100%;
+    opacity: 0.5;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("blueDoor.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("greenCol.jpg");
+    min-height: 400px;
+}
+
+/* Cities and country image */
+.bgimg-bmcc {
+    background-image: url("bmcc.jpg") ;
+    min-height: 80%;
+  
+}
+
+
+.bgimg-nyc {
+    background-image: url("nyc.jpg");
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+.bgimg-vzla {
+    background-image: url("vzla.jpg");
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+.bgimg-tram {
+    background-image: url("tram.jpg");
+    min-height: 400px;
+}
+
+.w3-section{
+    margin-top: 0px!important; 
+    
+}
+
+/*BMCC stuff */
+
+
+.w3-button:hover {
+    color: rgb(255, 0, 0)!important;
+    background-color: rgba(224, 220, 221, 0.644)!important;
+}
+
+
+
+/*table **/
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th{
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+@media all and (max-width: 900px) {
+
+    #humanDes{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #redTextShadow{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 20px rgb(206, 30, 45);
+        font-size: 30px;
+    }
+    
+	
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+

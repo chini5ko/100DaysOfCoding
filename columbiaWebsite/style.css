@@ -96,7 +96,7 @@ a{
 
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-china, .bgimg-nyc, .bgimg-vzla {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-china, .bgimg-nyc, .bgimg-vzla, .bgimg-tram {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,6 +140,11 @@ a{
     background-image: url("vzla.jpg");
     min-height: 100%;
     opacity: 0.8;
+}
+
+.bgimg-tram {
+    background-image: url("tram.jpg");
+    min-height: 400px;
 }
 
 .w3-section{

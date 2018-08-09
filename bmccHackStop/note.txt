@@ -1,0 +1,79 @@
+//To do 
+
+email me , ! contact me 
+
+Wechat 
+
+Colors theme 
+
+Instagram 
+
+Github 
+
+Mission: Type 1 Civilization. Hisory. 
+
+ <!-- bars -->
+  <div class="w3-col m12 w3-center w3-padding-large">
+
+    <p>
+      <b>
+        <i class="fa fa-hourglass-2 w3-margin-right"></i>Time</b>
+    </p>
+    <br>
+    <p class="w3-wide">
+      <i class="fa fa-code "></i>Coding </p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-green w3-center" style="width:50%">50%</div>
+    </div>
+    <p class="w3-wide">
+      <i class="fa fa-heartbeat w3-margin-right"></i>Exercising</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-red w3-center" style="width:20%">20%</div>
+    </div>
+    <p class="w3-wide">
+      <i class="fa fa-briefcase"></i>Working</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-blue w3-center" style="width:15%">15%</div>
+    </div>
+    <p class="w3-wide">
+      <i class="fa fa-child"></i>Resting</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-blue w3-center" style="width:15%">15%</div>
+    </div>
+  </div>
+
+  //3 Colors
+   <!-- 3 colors -->
+  <div class="w3-row ">
+
+    <!--red-->
+    <div class="w3-col m4 w3-center w3-padding-large">
+      <div class="w3-panel w3-center w3-pale-red w3-leftbar w3-rightbar w3-border-red" id="redBoxShadow">
+        <h3>Start Here</h3>
+        <img src="cuLogo.png" class=" w3-image w3-opacity w3-hover-opacity-off " id="logoSize">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <!-- green -->
+    <div class="w3-col m4 w3-center w3-padding-large" id="about">
+      <div class="w3-panel w3-center w3-pale-green w3-leftbar w3-rightbar w3-border-green" id="greenBoxShadow">
+        <img src="hector.jpg" class="w3-circle w3-image w3-opacity w3-hover-opacity-off " a lt="Photo of Me" width="88" height="88"
+          style="padding-top:20px">
+        <h3>
+          BMCC
+        </h3>
+      </div>
+    </div>
+
+    <!-- blue-->
+    <div class="w3-col m4 w3-center w3-padding-large">
+      <div class="w3-panel w3-center w3-pale-blue w3-leftbar w3-rightbar w3-border-blue" id="blueBoxShadow">
+        <h3>Go Anywhere</h3>
+        <img src="csLogo.png" class="w3-image w3-opacity w3-hover-opacity-off" id="logoSize">
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>

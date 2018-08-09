@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<title>BMCC Hack</title>
+<!-- Meta Tag -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hector Liang Columbia website">
+<meta name="keywords" content="Hector,Liang,Columbia,University">
+<meta name="author" content="Hector Liang">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS Files -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Js Files -->
+<script src="script.js" defer></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+        title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">
+        
+        <i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://github.com/chini5ko" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right ">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/chinisko" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/in/hectorliang" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right ">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+      <div class="w3-container w3-center w3-animate-right" id="myNavbarSmall">
+
+
+        <a href="#about" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">CONTACT</a>
+
+        <a href="https://github.com/chini5ko" target="_blank" class="w3-bar-item w3-button w3-hide-large w3-center">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/chinisko" target="_blank" class="w3-bar-item w3-button w3-hide-large  w3-center ">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/hectorliang" target="_blank" class="w3-bar-item w3-button w3-hide-large  w3-center ">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- First Parallax Image with Logo Text 
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">H . L</span>
+    </div>
+  </div>-->
+  <!-- First Parallax 3 images -->
+
+
+
+  <div class="w3-display-container bgimg-bmcc  w3-buttonbar w3-border-red" id="home">
+    <div class="w3-display-middle w3-large">
+      <h1 id="redTextShadow" style="font-weight:bold">BMCC HACK</h1>
+
+    </div>
+  </div>
+  </div>
+
+   <!-- White separate (Mission Section) -->
+  <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+  <!-- Container (Mission Section) -->
+  <div id="themeBoxShadow">
+
+  </div>
+  <div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-blue" id="humanDes">
+    <h3 class="w3-center">Mission</h3>
+    <h4 class="w3-center">
+      <em>
+        <span id="redTheme">Start</span>  
+        <span id="greenTheme">Coding</span> Here. 
+        <span id="blueTheme">Go</span>
+        <span id="greenTheme">Coding</span> Anywhere. 
+      </em>
+    </h4>
+
+
+    <span style="margin-left:2em"></span>
+    <h5>
+       
+      Borough of Manhattan Community College is a vibrant, 
+      pluralistic learning community committed to the intellectual and personal growth of students.
+       Working closely with organizations across New York City and beyond, we prepare students from around the globe for degree completion,
+        successful transfer, career achievement, lifelong learning, and civic participation.
+    </h5>
+
+  </div>
+
+  <!-- White separate (Center Section) -->
+<div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+<div class="w3-row w3-center w3-white">
+  <div class="w3-third">
+      <button class="w3-button w3-circle w3-red">1</button>
+
+    <div class="w3-center"> 
+        <h5>This is your first step</h5>
+        <h6>Register for the event and a Free t-shirt</h6>
+
+        <button class=" w3-button w3-red" style="width:33.3%">Register</button>
+    </div>
+      <br>
+      <br>
+      
+
+    <span class="w3-xlarge">
+
+      </span>
+      </div>
+
+
+  <div class="w3-third w3-leftbar w3-rightbar w3-border-orange ">
+
+      <button class="w3-button w3-circle w3-red">2</button>
+
+      
+          <h5>Get Reading</h5>
+          <h6>Check all the workshops</h6>
+
+                  <button class=" w3-button w3-red" style="width:33.3%">Schedule</button>
+
+  </div>
+
+  <div class="w3-third  " >
+      <button class="w3-button w3-circle w3-red">3</button>
+       <h5>Attend</h5>
+       <h6>Bring your laptop and charger</h6>
+       <button class=" w3-button w3-red" style="width:33.3%">Location</button>
+
+        
+  </div>
+</div>
+
+  
+   <!-- White separate (Worksop Section) -->
+   <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+</div>
+
+<div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-blue" id="humanDes">
+  <h3 class="w3-center">Schedule</h3>
+  <h4 class="w3-center">
+    <em>
+      <span id="redTheme">Register </span>  
+      <span id="greenTheme">Participate</span> 
+      <span id="blueTheme">Win</span>
+     
+    </em>
+  </h4>
+
+
+ <div class="w3-center"> 
+         <button class="w3-button w3-circle w3-red">1</button>
+
+  <h5>
+     
+    9:00 Register
+  </h5>
+  <h5>
+     
+    10:00 Challenge Beging
+  </h5>
+
+  <h5>
+     
+    11:00 Workshop
+  </h5>
+  <h5>
+     
+    12:00 Workshop
+  </h5>
+  <h5>
+     
+    1:00 Lunch
+  </h5>
+</div>
+
+</div>
+<!-- White separate (Worksop Section) -->
+  <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+<div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-blue" id="humanDes">
+  <h3 class="w3-center">Workshop</h3>
+  <h4 class="w3-center">
+    <em>
+      <span id="redTheme">Your</span>  
+      <span id="greenTheme">Next</span> 
+      <span id="blueTheme">Stop</span>
+     
+    </em>
+  </h4>
+
+
+  <span style="margin-left:2em"></span>
+  <h5>
+     
+    Start solving a problem right away
+  </h5>
+
+</div>
+<!-- White separate (Worksop Section) -->
+  <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+  <!--Goals -->
+
+  <!-- White separate (Rules Section) -->
+  <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+</div>
+
+<div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-blue" id="humanDes">
+  <h3 class="w3-center">Rules</h3>
+  <h4 class="w3-center">
+    <em>
+      <span id="redTheme">Register </span>  
+      <span id="greenTheme">Participate</span> 
+      <span id="blueTheme">Win</span>
+     
+    </em>
+  </h4>
+
+
+ <div class="w3-center"> 
+  <h5>
+     
+    9:00 Register
+  </h5>
+  <h5>
+     
+    10:00 Challenge Beging
+  </h5>
+
+  <h5>
+     
+    11:00 Workshop
+  </h5>
+  <h5>
+     
+    12:00 Workshop
+  </h5>
+  <h5>
+     
+    1:00 Lunch
+  </h5>
+</div>
+
+</div>
+<!-- White separate (Worksop Section) -->
+  <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-16 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey">
+      <i class="fa fa-arrow-up w3-margin-right" id="blueTheme"></i>
+      To the Top
+      <i class="fa fa-arrow-up w3-margin-left" id="blueTheme"></i>
+    </a>
+    <div class="w3-large w3-section">
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
