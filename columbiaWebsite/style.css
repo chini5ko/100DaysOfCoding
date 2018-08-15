@@ -74,13 +74,13 @@ a{
 
 
 #myNavbar{
-    color: white;
-    text-shadow: 0 0 20px rgb(35, 144, 233);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 20px  rgb(0, 0, 0);
 }
 
 #myNavbarSmall{
     color: rgb(0, 0, 0);
-    text-shadow: 0 0 20px rgb(35, 144, 233);
+    text-shadow: 0 0 20px  rgb(0, 0, 0);
 }
 
 /* logo image */

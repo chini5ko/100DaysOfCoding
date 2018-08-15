@@ -31,6 +31,12 @@ a{
     font-size: 50px;
 }
 
+#orangeTextShadow{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px  #ff9800;
+    font-size: 50px;
+}
+
 
 #redBoxShadow{
     box-shadow: 0 0 20px rgba(250, 21, 21, 0.973);
@@ -40,8 +46,9 @@ a{
     box-shadow: 0 0 20px rgba(16, 91, 253, 0.973);
 }
 
-#greenBoxShadow{
-    box-shadow: 0 0 20px rgba(29, 128, 26, 0.973);
+#orangeBoxShadow{
+    box-shadow:  0 0 20px #ff9800;
+
 }
 
 #themeBoxShadow{
@@ -51,6 +58,9 @@ a{
 #redTheme{
     color:rgb(255, 49, 49);
 }
+#orangeTheme{
+    color:#ff9800;
+}
 
 .redTheme{
     color:rgb(255, 49, 49);
@@ -58,7 +68,7 @@ a{
 
 
 .blueTheme{
-    color:rgb(26, 174, 243);
+    color:rgb(35, 21, 224);
 }
 
 #greenTheme{
@@ -66,7 +76,7 @@ a{
 }
 
 #blueTheme{
-    color:rgb(26, 174, 243);
+    color: rgb(21, 116, 224);
 }
 
 #navDemo{
