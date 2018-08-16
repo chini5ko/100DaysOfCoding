@@ -68,6 +68,11 @@ a{
     color:rgb(26, 174, 243);
 }
 
+#blackShadow{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 20px  rgb(0, 0, 0);
+}
+
 #navDemo{
     background-color: #f1f1f181!important;
 }
