@@ -85,7 +85,8 @@ bot
  */
 
 let busyIndicator    = false
-let busyAnnouncement = `Automatic Reply: I cannot read your message because I'm in Class now, will talk to you when I get Finish my class.`
+let busyAnnouncement = `Nisko Bot: \n"<- Testing Mode ->"\nI cannot read your message because I'm in Class now, will talk to you ASAP. `
+busyAnnouncement+= '\n 我是Hector的“機器人”，他现在在上课. 他有空就会回答你。'
 
 bot.on('message', async function(msg) {
   log.info('Bot', '(message) %s', msg)
@@ -109,7 +110,7 @@ bot.on('message', async function(msg) {
   if (receiver.id === 'filehelper') {
     if (text === '#status') {
       await filehelper.say('in busy mode: ' + busyIndicator)
-      await filehelper.say('auto reply: ' + busyAnnouncement)
+      await filehelper.say('Auto reply: ' + busyAnnouncement)
 
     } else if (text === '#free') {
       busyIndicator = false
@@ -122,7 +123,7 @@ bot.on('message', async function(msg) {
 
       const matches = text.match(/^#busy (.+)$/i)
       if (!matches || !matches[1]) {
-        await filehelper.say('auto reply message: "' + busyAnnouncement + '"')
+        await filehelper.say('Auto reply message: ' + busyAnnouncement )
 
       } else {
         busyAnnouncement = matches[1]
