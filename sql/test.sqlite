@@ -1,0 +1,3 @@
+SELECT *
+FROM browse
+LIMIT 10;
