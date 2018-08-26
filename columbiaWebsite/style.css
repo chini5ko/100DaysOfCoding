@@ -67,6 +67,9 @@ a{
 #blueTheme{
     color:rgb(26, 174, 243);
 }
+#whiteTheme{
+    color:white;
+}
 
 #blackShadow{
     color: rgb(0, 0, 0);
@@ -165,6 +168,10 @@ a{
     vertical-align: top;
 }
 
+#lastInfo{
+    padding-left: 80px;
+}
+
 
 @media all and (max-width: 900px) {
 
@@ -173,9 +180,20 @@ a{
         padding-right: 30px;
     }
     
+    #lastInfo{
+        padding-left: 20px;
+    }
 	
 }
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-china, .bgimg-nyc, .bgimg-vzla, .bgimg-tram{
+        background-attachment: scroll;
+    }
+}
+
+.mySlides {display:none}

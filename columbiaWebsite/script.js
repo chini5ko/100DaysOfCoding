@@ -63,7 +63,7 @@ function showWechat(){
         document.getElementById("showWechatQRCode").style.visibility = "hidden";
         document.getElementById("showWechat").innerHTML = "";
         document.getElementById("wechatIcon").className ="fa fa-wechat";
-        document.getElementById("context").innerHTML = "CONCTACT";
+        document.getElementById("context").innerHTML = "CONTACT";
         idIsShown= false;
     }
    
@@ -90,3 +90,30 @@ if ( $(window).width() > 900) {
     document.getElementById("blueBar3").className += "w3-leftbar";
   }
 
+  //small top
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-light-grey", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-light-grey";
+  }

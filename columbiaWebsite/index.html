@@ -22,7 +22,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 
-<body>
+<body  id="home">
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
@@ -36,7 +36,7 @@
         <i class="fa fa-user"></i> ABOUT</a>
       <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">
         <i class="fa fa-th"></i> PORTFOLIO</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+      <a href="#contactLink" class="w3-bar-item w3-button w3-hide-small">
         <i class="fa fa-envelope"></i> CONTACT</a>
       <a href="https://github.com/chini5ko" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right ">
         <i class="fa fa-github"></i>
@@ -81,35 +81,52 @@
   </div>-->
   <!-- First Parallax 3 images -->
 
-
-
-  <div class="w3-display-container w3-third bgimg-china  w3-buttonbar w3-border-red" id="home">
+<!--Large screen top website  -->
+    <div class="w3-display-container w3-third bgimg-china  w3-buttonbar w3-border-red w3-hide-small" >
     <div class="w3-display-middle w3-large">
       <h1 id="redTextShadow" style="font-weight:bold">中国</h1>
     </div>
   </div>
 
 
-  <div class="w3-display-container w3-third bgimg-nyc">
-    <div class="w3-opacity-min" id="home">
+  <div class="w3-display-container w3-third bgimg-nyc  w3-hide-small">
+    <div class="w3-opacity-min">
       <div class="w3-display-middle w3-large">
         <h1 id="greenTextShadow">NYC</h1>
       </div>
     </div>
   </div>
 
-  <div class="w3-display-container w3-third bgimg-vzla">
-    <div class="w3-opacity-min" id="home">
+  <div class="w3-display-container w3-third bgimg-vzla  w3-hide-small">
+    <div class="w3-opacity-min">
       <div class="w3-display-middle w3-large">
         <h1 id="blueTextShadow">Venezuela</h1>
       </div>
     </div>
   </div>
 
+<!--small screen top website  -->
+
+<div class="w3-content w3-hide-large w3-hide-midium" style="max-width:800px" id="home">
+    <img class="mySlides" src="nyc.jpg" style="width:100%">
+    <img class="mySlides" src="china.jpg" style="width:100%">
+    <img class="mySlides" src="vzla.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-center w3-hide-large w3-hide-midium">
+   
+    <button class="w3-button demo" onclick="currentDiv(1)"><span id="greenTheme">NYC</span></button> 
+    <button class="w3-button demo" onclick="currentDiv(2)"><span id="redTheme">中国</span></button> 
+    <button class="w3-button demo" onclick="currentDiv(3)"><span id="blueTheme">VZLA</span></button> 
+  </div>
+
+
+
+
 
 
   <!--About 3 colors -->
-  <div class="w3-row ">
+  <div class="w3-row  ">
 
     <!-- GS Cu Logo-->
     <div class="w3-col m4 w3-center w3-padding-large">
@@ -149,7 +166,7 @@
   <div id="themeBoxShadow">
 
   </div>
-  <div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-blue" id="humanDes">
+  <div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-black" id="humanDes">
     <h3 class="w3-center">Human</h3>
     <h4 class="w3-center">
       <em>
@@ -360,7 +377,7 @@
         <h6>
           <span id="greenTheme">'</span>Number<span id="greenTheme">'</span>
           <br>
-          <span id="greenTheme">1</span>
+          000<span id="greenTheme">1</span>000
 
       </div>
   
@@ -419,7 +436,7 @@
        
         <br>Spanish
         <br>Mandarin
-        <br>English </h6>
+        <br  id="contactLink">English </h6>
 
     </div>
   </div>
@@ -464,7 +481,7 @@
       <span class="w3-xxlarge  w3-wide">
         <img id="showWechatQRCode">
         <div class="w3-display-middle" id="greenTextShadow">
-          <h1 class="w3-xxlarge w3-wide" id="context">CONTACT</h1>
+          <h1 class="w3-xxlarge w3-wide" id="context" >CONTACT</h1>
         </div>
         </img>
     </div>
@@ -512,7 +529,7 @@
       <div class="w3-col m4 w3-container ">
       </div>
       <div class="w3-col m4 w3-panel">
-        <div class="w3-large w3-margin-bottom" style="padding-left: 90px">
+        <div class="w3-large w3-margin-bottom" id="lastInfo">
           <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" id="redTheme"></i> New York City
           <br>
           <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" id="greenTheme"></i> What's a phone?
@@ -528,10 +545,11 @@
   </div>
 
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
-    <a href="#home" class="w3-button w3-black">
-      <i class="fa fa-arrow-up w3-margin-right" id="blueTheme"></i>
-      To the Top
+  <footer class="w3-center w3-black w3-padding-16  ">
+    <a href="#home" class="w3-button w3-black w3-hover-white">
+      <i class="fa fa-arrow-up w3-margin-right" id="redTheme"></i>
+      <span id="greenTheme">To The Top</span>
+       
       <i class="fa fa-arrow-up w3-margin-left" id="blueTheme"></i>
     </a>
     <div class="w3-large w3-section">
