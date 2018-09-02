@@ -30,36 +30,36 @@ Code at least 1 hour a day; otherwise, I will pay $5 to a fund for fun at the en
 21. [Start up kit - Balance Sheert (version 1.2)](https://github.com/chini5ko/100DaysOfCoding/tree/master/startUpKit) 
 
 22. BMCC Hack template website
- [http://bmcchackathon.github.io](Final version Link)
+ [Final version Link](http://bmcchackathon.github.io)
 
 23. BMCC Hack template website v-1.2
- [http://bmcchackathon.github.io](Final version Link)
+ [Final version Link](http://bmcchackathon.github.io)
 
 24. CodeSignal challenge with Pixels
 
 25. CodeSignal challenge solved
 
 26. BMCC Hack template website v-1.3 
- [http://bmcchackathon.github.io](Final version Link)
+[Final version Link](http://bmcchackathon.github.io)
 
 27. BMCC Hack template website v-1.4 ( Logo)
- [http://bmcchackathon.github.io](Final version Link)
+ [Final version Link](http://bmcchackathon.github.io)
 
 28. Google Material design (web design testing)
 
 29. Google Material design (kept web design testing)
 
 30. BMCC Hack template website v-1.5 ( Responsive)
- [http://bmcchackathon.github.io](Final version Link)
+ [Final version Link](http://bmcchackathon.github.io)
 
 31. BMCC Hack template website v-1.6 ( header)
- [http://bmcchackathon.github.io](Final version Link) 
+ [Final version Link](http://bmcchackathon.github.io)
 
 32. BMCC Hack template website v-1.7 ( background)
- [http://bmcchackathon.github.io](Final version Link)  
+ [Final version Link](http://bmcchackathon.github.io)  
 
 33. BMCC Hack template website v-1.8 ( colors)
- [http://bmcchackathon.github.io](Final version Link)  
+ [Final version Link](http://bmcchackathon.github.io) 
 
 34. Testing with AMS
 
@@ -69,7 +69,8 @@ Code at least 1 hour a day; otherwise, I will pay $5 to a fund for fun at the en
 
 37. Node JS files and event
 
-38. [https://github.com/chini5ko/100DaysOfCoding/blob/master/nodeW3/sendEmail.js](Emailing with node js on the terminal) 
+38. [Emailing with node js on the terminal](Emailing with node js on the terminalhttps://github.com/chini5ko/100DaysOfCoding/blob/master/nodeW3/sendEmail.js) 
+38. 
 
 39. Testing website parallax web
 
@@ -163,7 +164,7 @@ Code at least 1 hour a day; otherwise, I will pay $5 to a fund for fun at the en
 
 84.  Reviewing Java classes with a simple return method, object instantiation, and an instance call 
 
-85. [https://github.com/chini5ko/100DaysOfCoding/tree/master/JAVA%20Review](Reviewing Java inputoutput) 
+85. [Reviewing Java inputoutput](https://github.com/chini5ko/100DaysOfCoding/tree/master/JAVA%20Review) 
 
 
 (This readme is monthly updated, hpefully);
