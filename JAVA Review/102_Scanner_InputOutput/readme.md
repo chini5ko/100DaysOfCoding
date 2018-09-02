@@ -1,8 +1,9 @@
 # Java 102 (Scanner and Files - io)
 
-##  Librarries 
+##  Library 
 Scanner 
 io
+
 ```
 import java.util.Scanner;
 import java.io.*;
@@ -10,7 +11,7 @@ import java.io.*;
 ```
 
 
-## Scanning a File
+# Scanning a File
 
 
 ```
