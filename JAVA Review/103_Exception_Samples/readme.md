@@ -29,7 +29,7 @@ UndergraduateSchools[3] = BC;
 UndergraduateSchools[4] = SEAS; // this statement causes an exception 
 
 // This statement is never executed
-System.out.println("Which school you belong to?");
+System.out.println("Which school do you belong to?");
 
 ```
 The array index is from 0-3. 
