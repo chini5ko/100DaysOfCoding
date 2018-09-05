@@ -4,7 +4,7 @@ For example: a file's name does not match with what is on the program.
 
 ## My own review of exeption
 
-I will use th folliwing source to summarize and review exeption 
+I will use the following source to summarize and review exeption 
 Source of tutorial and code:
 
 Link: https://www.geeksforgeeks.org/exceptions-in-java/
@@ -12,8 +12,8 @@ Link: https://www.geeksforgeeks.org/exceptions-in-java/
 
 # 2 Types of Exceptions 
 
-* Uncheck Exception 
-* Check Exception 
+* Unchecked Exception 
+* Checked Exception 
 
 ## Unchecked Exception
 The Programmer fault. 
