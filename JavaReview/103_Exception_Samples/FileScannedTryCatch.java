@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class FileScannedTryCatch
 {
-  public static void main(String[] args) throws Exception
+  public static void main(String[] args) 
   {
     // pass the path to the file as a parameter
     try{
