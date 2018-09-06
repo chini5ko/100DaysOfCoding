@@ -2,9 +2,9 @@
 A unwanted or unexpected event that occurs during a program.
 For example: a file's name does not match with what is on the program. 
 
-## My own review of exeption
+## My own review of exception
 
-I will use the following source to summarize and review exeption 
+I will use the following source to summarize and review exception 
 Source of tutorial and code:
 
 - Link: https://www.geeksforgeeks.org/exceptions-in-java/
@@ -27,8 +27,11 @@ int[] UndergraduateSchools = new int[4];
 UndergraduateSchools[1] = GS;
 UndergraduateSchools[2] = CC;
 UndergraduateSchools[3] = BC;
-UndergraduateSchools[4] = SEAS; // this statement causes an exception 
+UndergraduateSchools[4] = TC; // this statement causes an exception 
 
+//The correct answer will be replacing this line with the index "0" in the array:
+//UndergraduateSchools[0] = SEAS;
+  
 // This statement is never executed
 System.out.println("Which school do you belong to?");
 
@@ -130,6 +133,9 @@ Notice that exception is not thrown in the main method.
    
   }
 ```
+
+# Throws VS Throw Keywords
+//next day 
 
 
 
