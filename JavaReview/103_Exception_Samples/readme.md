@@ -2,13 +2,13 @@
 A unwanted or unexpected event that occurs during a program.
 For example: a file's name does not match with what is on the program. 
 
-## My own review of exeption
+## My own review of exception
 
-I will use the following source to summarize and review exeption 
+I will use the following source to summarize and review exception 
 Source of tutorial and code:
 
-Link: https://www.geeksforgeeks.org/exceptions-in-java/
-Link: https://beginnersbook.com/2013/04/java-checked-unchecked-exceptions-with-examples/
+- Link: https://www.geeksforgeeks.org/exceptions-in-java/
+- Link: https://beginnersbook.com/2013/04/java-checked-unchecked-exceptions-with-examples/
 
 
 # 2 Types of Exceptions 
@@ -27,8 +27,11 @@ int[] UndergraduateSchools = new int[4];
 UndergraduateSchools[1] = GS;
 UndergraduateSchools[2] = CC;
 UndergraduateSchools[3] = BC;
-UndergraduateSchools[4] = SEAS; // this statement causes an exception 
+UndergraduateSchools[4] = TC; // this statement causes an exception 
 
+//The correct answer will be replacing this line with the index "0" in the array:
+//UndergraduateSchools[0] = SEAS;
+  
 // This statement is never executed
 System.out.println("Which school do you belong to?");
 
@@ -106,4 +109,35 @@ is thrown
 - Declare the exception using throws keyword (the previous example we showed this)
 - Handle the exceptions using try-catch blocks (this example is below this)
 
-### Try-catch blocks
+### Try-catch blocks (second method)
+
+Notice that exception is not thrown in the main method.
+
+```
+  public static void main(String[] args) 
+  {
+    // pass the path to the file as a parameter
+    try{
+    File file =
+      new File("C:\\Users\\Chinisko\\Desktop\\github\\100DaysOfCoding\\JAVA Review\\103_Exception_Samples\\secretFile.txt");
+      Scanner sc = new Scanner(file);
+ 
+      while (sc.hasNextLine())
+        System.out.println(sc.nextLine());
+    }
+    catch(FileNotFoundException e){
+      System.out.println("The specified file is not " +
+			"present at the given path");
+    }
+
+   
+  }
+```
+
+# Throws VS Throw Keywords
+//next day 
+
+
+
+
+
