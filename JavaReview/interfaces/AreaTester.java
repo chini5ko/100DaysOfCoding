@@ -9,11 +9,14 @@ public class AreaTester{
         //every class inherited the toString(), or we can overrride it ! 
 
         s[0] = new Rectangle(2,3);
-       // s[1] = new Circle(2,3);
+    
+        s[1] = new Circle(2);
 
         //review polimorphism 
         System.out.println(s[0].area());
         System.out.println(s[0]);
+        System.out.println(s[1].area());
+        System.out.println(s[1]);
 
         //error bc is not part of Object 
         // System.out.println(s[0].getLength());

@@ -17,8 +17,8 @@ public class PersonTester{
         //Array has a method call sort (as long as we have implemented comparable Sort will works)
         Arrays.sort(people);
         //print 
-        for(int i=0;i<Person.length;i++){
-            System.out.println(Person[i]);
+        for(int i=0;i<people.length;i++){
+            System.out.println(people[i]);
         }
 
         
