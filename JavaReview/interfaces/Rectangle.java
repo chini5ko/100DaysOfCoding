@@ -13,8 +13,9 @@ public class Rectangle implements Shape{
         return length*witdh;
     }
 
+    
     public double getLength(){
-        return this.length;
+        return length;
     }
 
     public String toString(){

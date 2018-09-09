@@ -18,7 +18,7 @@ public class AreaTester{
         System.out.println(s[1].area());
         System.out.println(s[1]);
 
-        //error bc is not part of Object 
+        //error bc is not part of Object ??????????? ask prof ! 
         // System.out.println(s[0].getLength());
 
         //must review Comparable ! 
