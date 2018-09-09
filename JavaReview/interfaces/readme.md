@@ -30,7 +30,7 @@ A class that implements interface must implement all the methods in the interfac
 ### Circle Class that implements the Shape interface  which has the Area method
 ```
 public class Circle implements Shape{
-    //public class Circle{ does not work because it does not implemented Area 
+    //public class Circle{ does not work because it does not implemented Shape (which has the area abstract method?) 
     private double radius;
 
     public Circle(double r){
