@@ -4,7 +4,10 @@ Followed this tutorial
 
 # Steps
 1. [Install Tex Live](https://www.tug.org/texlive/) 
-2. In Visual Studio Code add the Latex Workshop
+2. Add in Visual Studio Code the Latex Workshop extension
 
-# Syntax
+# Syntax Math
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+# Syntax Basic
+https://en.wikibooks.org/wiki/LaTeX/Basics
