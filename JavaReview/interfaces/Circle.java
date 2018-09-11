@@ -18,4 +18,13 @@ public class Circle implements Shape{
         return Math.PI * radius * radius;
     }
 
+    //Circle is not abstract and does not override abstract method threeD() in Shape
+
+    //Fixing error
+    //three Dimension
+
+    public double threeD(){
+        return 3;
+    }
 }
+

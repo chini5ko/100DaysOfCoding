@@ -25,4 +25,13 @@ public class Rectangle implements Shape{
     public double getWidth(){
         return this.witdh;
     }
+
+    //Rectangle is not abstract and does not override abstract method threeD() in Shape
+
+    //Fixing error
+    //three Dimension
+
+    public double threeD(){
+        return 3;
+    }
 }

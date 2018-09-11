@@ -15,6 +15,9 @@ Implement comparable
 # Interface 
 It has the characteristic of a class. An interface class contains of methods and variables; however, the methods declared in the interface are abstract (only method signature, no body). It provide total abstraction to the class. 
 
+## Must override all the methods declared in the interface 
+ Circle is not abstract and does not override abstract method 
+
 
 ```
 public interface Shape{
