@@ -133,6 +133,9 @@ Radius: 2.0
 
 # Sort
 
+# Difference between an interface and extension
+extends is for extending a class (example CheckingAccount extends to BankAccount)
+implements is for implementing an interface (example: Rectangle implements Shape)
 
 # Links review and source
 - https://www.tutorialspoint.com/java/java_interfaces.html
