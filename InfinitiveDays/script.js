@@ -17,10 +17,7 @@ var x = setInterval(function() {
       }
 
       if(day > 105)
-      document.getElementById("newIf").innerHTML = "if (day == 100){ <br>  <br> stopPostingOnFB(); <br> <br> "  +
+      document.getElementById("newIf").innerHTML = "if (day == 100) { <br>  <br> stopPostingOnFB(); <br> <br> "  +
       "gitEveryday(); <br> }";
 
-
-
-    
   }, 110);
